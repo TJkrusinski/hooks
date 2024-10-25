@@ -1,19 +1,28 @@
 {
   "name": "@tjkrusinski/hooks",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.2",
+  "description": "A set of useful React hooks",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    },
+    "./useMatchMedia": {
+      "import": "./dist/useMatchMedia.mjs",
+      "require": "./dist/useMatchMedia.js"
+    }
+  },
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "scripts": {
     "test": "jest test",
     "lint": "tsc",
-    "build": "tsup index.ts --format cjs,esm --dts"
+    "build": "tsup"
   },
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "@changesets/cli": "^2.27.9",
     "@testing-library/react": "^16.0.1",
     "@types/jest": "^29.5.14",
     "@types/react": "^18.3.12",
