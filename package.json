@@ -1,6 +1,6 @@
 {
   "name": "@tjkrusinski/hooks",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A set of useful React hooks",
   "exports": {
     ".": {
