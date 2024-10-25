@@ -17,8 +17,9 @@ $ npm i @tjkrusinski/hooks
 ```ts
 
 import {useMatchMedia} from '@tjkrusinski/hooks';
-// OR, if you want to tree shake
-import useMatchmedia from '@tjkrusinski/hooks/useMatchMedia';
+
+// OR, if you really want to make sure it tree shakes
+import useMatchmedia from '@tjkrusinski/hooks/dist/useMatchMedia';
 
 // in your component...
 

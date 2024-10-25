@@ -1,6 +1,6 @@
 {
   "name": "@tjkrusinski/hooks",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A set of useful React hooks",
   "exports": {
     ".": {
@@ -9,7 +9,8 @@
     },
     "./useMatchMedia": {
       "import": "./dist/useMatchMedia.mjs",
-      "require": "./dist/useMatchMedia.js"
+      "require": "./dist/useMatchMedia.js",
+      "types": "./dist/useMatchMedia.d.ts"
     }
   },
   "main": "dist/index.js",
