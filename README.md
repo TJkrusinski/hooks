@@ -1,6 +1,6 @@
 # Hooks
 
-A collection of hooks that I often use in react projects.
+A collection of hooks that I often use in react projects. The repo is setup to be tree shake friendly.
 
 Install:
 
@@ -20,14 +20,8 @@ $ npm i @tjkrusinski/hooks
 
 import {useArrayItemLoop} from '@tjkrusinski/hooks';
 
-// OR, if you really want to make sure it tree shakes
-import useArrayItemLoop from '@tjkrusinski/hooks/dist/useArrayItemLoop';
-
 // in your component...
-
 const current = useArrayItemLoop(['first.jpg', 'second.jpg', 'third.jpg'], 200);
-
-
 ```
 
 Will fire every 200ms, each time with `current` being the successive item in the array. 
@@ -38,11 +32,7 @@ Will fire every 200ms, each time with `current` being the successive item in the
 
 import {useInterval} from '@tjkrusinski/hooks';
 
-// OR, if you really want to make sure it tree shakes
-import useInterval from '@tjkrusinski/hooks/dist/useInterval';
-
 // in your component...
-
 useInterval(() => {
   console.log('print ever 200ms');
 }, 200);
@@ -51,18 +41,13 @@ useInterval(() => {
 
 The classic non-intuitive useInterval hook.
 
-
 ## `useMatchMedia`
 
 ```ts
 
 import {useMatchMedia} from '@tjkrusinski/hooks';
 
-// OR, if you really want to make sure it tree shakes
-import useMatchmedia from '@tjkrusinski/hooks/dist/useMatchMedia';
-
 // in your component...
-
 const scheme = useMatchMedia();
 
 if (scheme === 'light') {
