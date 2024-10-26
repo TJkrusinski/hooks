@@ -10,7 +10,47 @@ $ npm i @tjkrusinski/hooks
 
 ### Available hooks
 
+- [useArrayItemLoop](#useArrayItemLoop)
+- [useInterval](#useInterval)
 - [useMatchMedia](#useMachMedia)
+
+## `useArrayItemLoop`
+
+```ts
+
+import {useArrayItemLoop} from '@tjkrusinski/hooks';
+
+// OR, if you really want to make sure it tree shakes
+import useArrayItemLoop from '@tjkrusinski/hooks/dist/useArrayItemLoop';
+
+// in your component...
+
+const current = useArrayItemLoop(['first.jpg', 'second.jpg', 'third.jpg'], 200);
+
+
+```
+
+Will fire every 200ms, each time with `current` being the successive item in the array. 
+
+## `useInterval`
+
+```ts
+
+import {useInterval} from '@tjkrusinski/hooks';
+
+// OR, if you really want to make sure it tree shakes
+import useInterval from '@tjkrusinski/hooks/dist/useInterval';
+
+// in your component...
+
+useInterval(() => {
+  console.log('print ever 200ms');
+}, 200);
+
+```
+
+The classic non-intuitive useInterval hook.
+
 
 ## `useMatchMedia`
 

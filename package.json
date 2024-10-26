@@ -1,16 +1,22 @@
 {
   "name": "@tjkrusinski/hooks",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A set of useful React hooks",
   "exports": {
-    ".": {
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.js"
-    },
     "./useMatchMedia": {
+      "types": "./dist/useMatchMedia.d.ts",
       "import": "./dist/useMatchMedia.mjs",
-      "require": "./dist/useMatchMedia.js",
-      "types": "./dist/useMatchMedia.d.ts"
+      "require": "./dist/useMatchMedia.js"
+    },
+    "./useInterval": {
+      "types": "./dist/useInterval.d.ts",
+      "import": "./dist/useInterval.mjs",
+      "require": "./dist/useInterval.js"
+    },
+    "./useArrayItemLoop": {
+      "types": "./dist/useArrayItemLoop.d.ts",
+      "import": "./dist/useArrayItemLoop.mjs",
+      "require": "./dist/useArrayItemLoop.js"
     }
   },
   "main": "dist/index.js",
@@ -21,6 +27,11 @@
     "lint": "tsc",
     "build": "tsup"
   },
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    },
+
   "author": "",
   "license": "MIT",
   "devDependencies": {
